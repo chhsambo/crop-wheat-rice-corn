@@ -9,7 +9,7 @@ def home():
 
 @app.get("/about")
 def about():
-    return "Sample app for class Co2E1"
+    return render_template("about.html")
 
 @app.post("/result")
 def result():
