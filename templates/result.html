@@ -30,7 +30,13 @@
       <div class="container">
         <h1>Result page</h1>
 
-        {{result}}
+        {% for crop in output %}
+        <div>
+            {{crop}}
+            <img src="static/images/{{crop}}.jpg" alt="{{crop}}" 
+                class="img-thumbnail">
+        </div>
+        {% endfor %}
 
       </div>
     
